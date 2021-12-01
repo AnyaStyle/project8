@@ -1,0 +1,126 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 32px;
+}
+.static-container,
+.relative-container,
+.absolute-container {
+    border: 10px solid #000;
+    border-radius: 30px;
+    padding: 25px;
+    margin: 5px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border: 5px dashed#f55;
+    margin: 3px;
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.static{
+    background-color: blue;
+    color: white;
+    position: static; 
+}
+
+/*top,bottom, left and right*/
+.relative{
+    background-color: #12a807;
+    position: relative;
+    /* left: 50px;
+    top:-50px */
+    right: 10px;
+    bottom: 50px;
+    z-index:1;
+}
+
+.absolute{
+    color: #fff;
+    background-color: #403737;
+    position: absolute;
+    top: 300px;
+    /* right: 50px; */
+    left: 50px;
+    z-index: -1;
+}
+
+.absolute-container{
+position: relative;
+}
+
+.fixed-position{
+    height: 200px;
+    line-height: 100px;
+    background-color: #e28b19;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.transform-me{
+    box-shadow: 10px 10px 5px #000;
+    margin: 100px;
+    /* transform: translateY(100px);
+    transform: translateX(100px); */
+    /* transform: translate(250px,250px); */
+    /* transform: rotate(20deg); */
+    transform: scale(1);
+    /* transform: skew(45deg, 20deg); */
+}
+
+.transform-me:hover{
+    transform: scale(1.1);
+    /* transform: translateY(2px); */
+    /* transform: rotate(45deg); */
+    box-shadow: 10px 10px 5px rgb(151, 118, 118);
+}
+
+h1.heading{
+    color:#f44;
+    font-family: 'Comforter Brush', cursive;
+    /*10x16px (html default font size)*/
+    font-size: 3em;
+    font-style: italic;
+    /* font-variant: small-caps; */
+    font-weight: 700;
+    /* font: italic small-caps 700 36px/40px Arial, Helvetica, sans-serif; */
+    text-align: right;
+    /* text-decoration: line-through; */
+    text-shadow: 5px 5px 5px #f77;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+}
+
+p.text{
+    /* font-variant: small-caps; */
+    font-size: 16px;
+    line-height:1.5;
+    text-indent: 50px;
+    /* letter-spacing: 5px; */
+    word-spacing: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+/* @font-face {
+    font-family: 'my font';
+    src: url(./fonts/Comforter_Brush/);
+} */
